@@ -11,11 +11,11 @@
 </head>
 
 <body class="text-gray-600">
-    <div>
-        <div>
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="col-span-1">
             <nav>
                 <div>
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-1npx tai00">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-1px">
                         <a href="#">Swito App</a>
                     </h1>
                 </div>
@@ -38,37 +38,58 @@
                 </ul>
             </nav>
         </div>
-        <main class="px-16 py-6">
-            <div>
-                <a href="#" class="text-red-500">Log in</a>
-                <a href="#" class="text-red-500">Sign up</a>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="btn text-red-500">Log in</a>
+                <a href="#" class="btn text-red-500 ml-2">Sign up</a>
             </div>
             <header>
                 <h2 class="text-gray-700 text-4xl font-semibold">Recipes</h2>
                 <h3 class="text-2xl font-semibold">in demand</h3>
             </header>
-            <div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
-
-                <div class="mt-8">
-                    <!-- cards go here -->
-                    <div>
-                        <img src="/images/5 Bean Chilli Staw.jpeg" alt="">
-                        <div>
-                            <span>5 Bean chilli staw</span>
-                            <span>Recipe by Mario</span>
-                        </div>
+            <div class="mt-8 grid gap-5 md:grid-cols-1 lg:flex lg:flex-wrap">
+                <!-- cards go here -->
+                <div class="card">
+                    <img src="/images/Mc.jpeg" alt="Mc burger and french fries" class="w-full h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Mc burger and french fries</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Jack Ryan</span>
+                    </div>
+                    <div class="badge">
+                        <span>15 mins</span>
                     </div>
                 </div>
 
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 text-">Most popular</h4>
-                
-                <div class="mt-8">
-                    <!-- cards go here -->
+                <div class="card">
+                    <img src="/images/noodles.jpeg" alt="Spicy Noodles" class="w-full h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Spicy Noodles</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Tom Green</span>
+                    </div>
+                    <div class="badge">
+                        <span>10 mins</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="bg-gray-500 text-gray-900">Load more</div>
+
+                <div class="card">
+                    <img src="/images/bean chilli stew.jpeg" alt="Bean Chilli Stew" class="w-full h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">5 Bean chilli staw</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins</span>
+                    </div>
                 </div>
+            </div>
+
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h4>
+
+            <div class="mt-8">
+                <!-- cards go here -->
+            </div>
+            <div class="flex justify-center">
+                <div class="btn bg-gray-500 text-gray-900">Load more</div>
             </div>
         </main>
     </div>
